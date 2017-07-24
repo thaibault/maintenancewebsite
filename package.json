@@ -1,0 +1,23 @@
+{
+  "name": "maintainancewebsite",
+  "version": "1.0.0",
+  "license": "CC-BY-3.0",
+  "description": "Dummy site as temporary replacement for website in maintenance.",
+  "homepage": "http://torben.website/maintainanceWebsite",
+  "keywords": [
+    "homepage",
+    "website"
+  ],
+  "files": [
+    "index.html"
+  ],
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thaibault/maintainanceWebsite.git"
+  },
+  "scripts": {
+    "test": "cat index.html",
+    "update": "npm version patch && npm publish"
+  }
+}
