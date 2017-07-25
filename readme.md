@@ -11,7 +11,7 @@ This library written by Torben Sickert stand under a creative commons naming
 3.0 unported license. see http://creativecommons.org/licenses/by/3.0/deed.de
 endregion -->
 
-[![Build Status](https://travis-ci.org/thaibault/maintainanceWebsite.svg?branch=master)](https://travis-ci.org/thaibault/maintainanceWebsite)
+[![Build Status](https://travis-ci.org/thaibault/maintenanceWebsite.svg?branch=master)](https://travis-ci.org/thaibault/maintenanceWebsite)
 
 <!--|deDE:Einsatz-->
 Use case
