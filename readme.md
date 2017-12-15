@@ -16,7 +16,7 @@ endregion -->
 [![dependencies](https://img.shields.io/david/thaibault/maintenancewebsite.svg)](https://david-dm.org/thaibault/maintenancewebsite)
 [![devDependencies](https://img.shields.io/david/dev/thaibault/maintenancewebsite.svg)](https://david-dm.org/thaibault/maintenancewebsite?type=dev)
 [![peerDependencies](https://img.shields.io/david/peer/thaibault/maintenancewebsite.svg)](https://david-dm.org/thaibault/maintenancewebsite?type=peer)
-[![documentation-website](https://img.shields.io/website-up-down-green-red/http/torben.website/maintenanceWebsite.svg?label=documentation-website)](http://torben.website/maintenanceWebsite)
+[![website](https://img.shields.io/website-up-down-green-red/http/torben.website/maintenanceWebsite.svg?label=website)](http://torben.website/maintenanceWebsite)
 
 <!--|deDE:Einsatz-->
 Use case
