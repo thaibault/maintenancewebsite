@@ -13,12 +13,12 @@ pkgname=maintenance-website
 pkgver=1.0.1
 pkgrel=2
 pkgdesc='Maintenance website for documentation-, home- and websites.'
-arch=('any')
+arch=(any)
 license=('CC-BY-3.0')
 depends=()
-source=('index.html')
-md5sums=('SKIP')
-copyToAUR=true
+source=(index.html)
+md5sums=(SKIP)
+copy_to_aur=true
 
 package() {
     set +x
