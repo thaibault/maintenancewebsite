@@ -10,11 +10,11 @@
 # 3.0 unported license. see http://creativecommons.org/licenses/by/3.0/deed.de
 # endregion
 pkgname=maintenance-website
-pkgver=1.0.1
-pkgrel=2
+pkgver=1.0.2
+pkgrel=3
 pkgdesc='Maintenance website for documentation-, home- and websites.'
 arch=(any)
-license=('CC-BY-3.0')
+license=(CC-BY-3.0)
 depends=()
 source=(index.html)
 md5sums=(SKIP)
