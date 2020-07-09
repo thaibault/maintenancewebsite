@@ -3,7 +3,7 @@
   "version": "1.0.4",
   "license": "CC-BY-3.0",
   "description": "Dummy site as temporary replacement for website in maintenance.",
-  "homepage": "https://torben.website/maintainanceWebsite",
+  "homepage": "https://torben.website/maintainancewebsite",
   "keywords": [
     "homepage",
     "website"
@@ -14,7 +14,7 @@
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thaibault/maintainanceWebsite.git"
+    "url": "https://github.com/thaibault/maintainancewebsite.git"
   },
   "scripts": {
     "test": "cat index.html",
