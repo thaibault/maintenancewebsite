@@ -18,6 +18,7 @@
   },
   "scripts": {
     "test": "cat index.html",
-    "update": "yarn version --patch && yarn publish"
+    "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push",
+    "update": "yarn version --patch"
   }
 }
