@@ -18,7 +18,7 @@
   },
   "scripts": {
     "test": "cat index.html",
-    "postversion": "git push --tags && yarn publish . --tag $npm_package_version && git push",
+    "postversion": "git push --tags && git push",
     "update": "yarn version --patch"
   }
 }
