@@ -10,12 +10,6 @@ This library written by Torben Sickert stand under a creative commons naming
 3.0 unported license. See https://creativecommons.org/licenses/by/3.0/deed.de
 endregion -->
 
-Project status
---------------
-
-[![npm](https://img.shields.io/npm/v/maintenancewebsite?color=%23d55e5d&label=npm%20package%20version&logoColor=%23d55e5d&style=for-the-badge)](https://www.npmjs.com/package/maintenancewebsite)
-[![npm downloads](https://img.shields.io/npm/dy/maintenancewebsite.svg?style=for-the-badge)](https://www.npmjs.com/package/maintenancewebsite)
-
 <!--|deDE:Einsatz-->
 Use case
 --------
