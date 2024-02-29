@@ -19,6 +19,6 @@
   "scripts": {
     "test": "cat index.html",
     "postversion": "git push --tags && git push",
-    "update": "yarn version --patch"
+    "update": "yarn version patch && yarn npm publish"
   }
 }
