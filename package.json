@@ -20,7 +20,6 @@
     "clear": "echo nothing to clear.",
     "build": "echo nothing to build.",
     "test": "cat index.html",
-    "postversion": "git push --tags && git push",
     "update": "yarn version patch && yarn npm publish"
   },
   "engines": {
