@@ -15,8 +15,3 @@ Use case
 --------
 
 Generic temporary website replacement for pages currently in maintenance mode.
-
-<!-- region modline
-vim: set tabstop=4 shiftwidth=4 expandtab:
-vim: foldmethod=marker foldmarker=region,endregion:
-endregion -->
