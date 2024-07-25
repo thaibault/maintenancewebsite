@@ -2,58 +2,69 @@
 
 # NOTE: Every entry has be sorted in given alphabetic order to avoid
 # duplicates!
+#
+# Sorting order (first letter matters but a ! can precede.):
+#
+# 1. Alphabetical
+# 2. Not one of the others
+# 3. .
+# 4. *
+# 5. /
 
-# Project specific
-# ...
+# Security related data should not be versioned.
+.encryptionPassword
 
 # Generated documentations
 apiDocumentation
-
-# Generated runtime bytecode files.
-*.ngfactory.ts
-__pycache__
-*.py[cod]
 
 # Runtime data
 backup
 cache/*
 !cache/.gitkeep
-.cache
-*.cache
-.config
 database
+datetime-*.rc
+dockbarx-*.rc.*
+icons.screen*.rc
 log
 !log/.gitkeep
 logs
 !logs/.gitkeep
 log.txt
-*.log
+renderedData
+!renderedData/.gitkeep
+source/image/sprite.png
+.Trash-*
+.cache
+.config
+.gnupg
+.goutputstream-*
 .local
 .node-gyp
 .node-xmlhttprequest-sync*
 .nyc_output
-renderedData
-!renderedData/.gitkeep
-source/image/sprite.png
 .ssh
+*.bak
+*.cache
+*.log
 
-# Certification
+# Certificates
 .pki
-certificate
-!certificate/localhost/*
-!certificate/letsEncrypt/configuration/.gitkeep
-!certificate/letsEncrypt/log/.gitkeep
+*.crt
+*.cer
+*.pem
 
 # Temporary compile files
+.dynamicConfiguration-*.json
 build
+dist
+target
 *Bundle.*
+*.bundle.*
 *.compiled.*
 *.compiled
-!/data/**/*
-dist
 *.dll-manifest.json
-.dynamicConfiguration-*.json
-target
+*.styles.css
+!/data/**/*
 
 # Profiling data.
 *.profile
@@ -61,24 +72,25 @@ target
 # Packages
 bin
 develop-eggs
-*.egg
-*.egg-info
 eggs
-.installed.cfg
 lib
 lib64
+out
 parts
-.sass-cache
 sdist
-.SRCINFO
 var
+.installed.cfg
+.sass-cache
+.SRCINFO
+*.egg
+*.egg-info
 
 # Ignore docker nested bash generated files.
 .bash_history
 
 # Unit test / coverage reports
-.coverage
 nosetests.xml
+.coverage
 .tox
 
 # Translations
@@ -90,21 +102,22 @@ nosetests.xml
 .pydevproject
 
 # Vim temporary file
+.nvimlog
 .ropeproject
-*.swp
 .viminfo
+*.swp
 
 # JetBrain's idea, PHPStorm and other IDE Files
 .externalToolBuilders
-**/.idea/workspace.xml
+
+.idea/tasks.xml
+.idea/workspace.xml
+.idea/**/*.iws
+
 .project
 .pydevproject
 .settings
-**/.idea/workspace.xml
-.project
-.pydevproject
-.settings
-.externalToolBuilders
+*.iml
 
 # Gedit autosave backups.
 *~
@@ -118,21 +131,52 @@ nosetests.xml
 # Temporary git files
 .git-rewrite
 
-# NPM/yarn's runtime files
+# NPM's runtime files
 node_modules/
-.npm/
 npm-debug.log
+.npm/
 .npm-debug.log
 .v8flags.*
+
+# yarn's runtime files
 yarn-error.log
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
 # Java
 .java/
+.javacpp
 .jrebel/
 .m2/
 
+# JavaScript / TypeScript
+*.ngfactory.ts
+*.d.ts
+types/*.d.ts
+@types/*.d.ts
+typings/*.d.ts
+!declarations.d.ts
+
+# MAC OS
+.DS_Store
+
+# Python
+__pycache__
+*.py[cod]
+
 # Temporary downloading file artefact
 *.crdownload
+
+# Project specific
+*.js
+*.mjs
+# ...
+
 # region vim modline
 # vim: set tabstop=4 shiftwidth=4 expandtab:
 # vim: foldmethod=marker foldmarker=region,endregion:
