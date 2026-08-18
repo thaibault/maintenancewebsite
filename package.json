@@ -1,24 +1,23 @@
 {
   "name": "maintainancewebsite",
   "version": "1.0.5",
-  "license": "CC-BY-3.0",
   "description": "Dummy site as temporary replacement for website in maintenance.",
-  "homepage": "https://torben.website/maintainancewebsite",
   "keywords": [
     "homepage",
     "website"
   ],
-  "files": [
-    "index.html"
-  ],
-  "main": "index.html",
+  "homepage": "https://torben.website/maintainancewebsite",
+  "license": "CC-BY-3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/thaibault/maintainancewebsite.git"
   },
+  "main": "index.html",
+  "type": "module",
+  "files": [
+    "index.html"
+  ],
   "scripts": {
-    "clear": "echo nothing to clear.",
-    "build": "echo nothing to build.",
     "test": "cat index.html"
   },
   "engines": {
