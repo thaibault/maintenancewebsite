@@ -1,31 +1,29 @@
 {
   "name": "maintainancewebsite",
   "version": "1.0.5",
-  "license": "CC-BY-3.0",
   "description": "Dummy site as temporary replacement for website in maintenance.",
-  "homepage": "https://torben.website/maintainancewebsite",
   "keywords": [
     "homepage",
     "website"
   ],
-  "files": [
-    "index.html"
-  ],
-  "main": "index.html",
+  "homepage": "https://torben.website/maintainancewebsite",
+  "license": "CC-BY-3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/thaibault/maintainancewebsite.git"
   },
+  "type": "module",
+  "main": "index.html",
+  "files": [
+    "index.html"
+  ],
   "scripts": {
-    "clear": "echo nothing to clear.",
-    "build": "echo nothing to build.",
-    "test": "cat index.html",
-    "update": "yarn version patch && yarn npm publish"
+    "test": "cat index.html"
   },
   "engines": {
-    "node": ">=20",
-    "npm": ">=10",
+    "node": ">=26",
+    "npm": ">=12",
     "yarn": ">=4"
   },
-  "packageManager": "yarn@4.1.0+sha256.81a00df816059803e6b5148acf03ce313cad36b7f6e5af6efa040a15981a6ffb"
+  "packageManager": "yarn@4.18.0"
 }
