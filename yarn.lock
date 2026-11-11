@@ -5,8 +5,8 @@ __metadata:
   version: 10
   cacheKey: 10c0
 
-"maintainancewebsite@workspace:.":
+"maintenancewebsite@workspace:.":
   version: 0.0.0-use.local
-  resolution: "maintainancewebsite@workspace:."
+  resolution: "maintenancewebsite@workspace:."
   languageName: unknown
   linkType: soft

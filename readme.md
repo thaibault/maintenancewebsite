@@ -16,7 +16,6 @@ endregion -->
 Project status
 --------------
 
-[![npm](https://img.shields.io/npm/v/maintainancewebsite?color=%23d55e5d&label=npm%20package%20version&logoColor=%23d55e5d&style=for-the-badge)](https://www.npmjs.com/package/maintainancewebsite)
 [![website](https://img.shields.io/website-up-down-green-red/https/tsickert.com/maintenancewebsite.svg?label=website&style=for-the-badge)](https://tsickert.com/maintenancewebsite)
 
 <!--|deDE:Einsatzmöglichkeiten-->
@@ -69,27 +68,21 @@ The page content is currently written in German only.
 Installation
 ------------
 
-Pick whichever way fits your server. All of them give you the same
-"index.html".
+Pick whichever way fits your server. Both give you the same "index.html".
 <!--deDE:
-    Wählen Sie den Weg, der zu Ihrem Server passt. Alle liefern dieselbe
+    Wählen Sie den Weg, der zu Ihrem Server passt. Beide liefern dieselbe
     "index.html".
 -->
 <!--frFR:
-    Choisissez la méthode adaptée à votre serveur. Toutes fournissent le même
-    "index.html".
+    Choisissez la méthode adaptée à votre serveur. Les deux fournissent le
+    même "index.html".
 -->
 
-- Via npm: the file lands in
-  "node_modules/maintainancewebsite/index.html".<!--deDE:Über npm: Die Datei liegt anschließend unter "node_modules/maintainancewebsite/index.html".--><!--frFR:Via npm: le fichier se trouve ensuite dans "node_modules/maintainancewebsite/index.html".-->
 - On Arch Linux via the included "PKGBUILD": the file is installed to
   "/usr/lib/maintenanceWebsite.html".<!--deDE:Unter Arch Linux über das enthaltene "PKGBUILD": Die Datei wird nach "/usr/lib/maintenanceWebsite.html" installiert.--><!--frFR:Sous Arch Linux via le "PKGBUILD" fourni: le fichier est installé dans "/usr/lib/maintenanceWebsite.html".-->
 - As plain download from GitHub.<!--deDE:Als einfacher Download von GitHub.--><!--frFR:Par simple téléchargement depuis GitHub.-->
 
 ```bash
-# npm
-npm install maintainancewebsite
-
 # Arch Linux
 git clone https://github.com/thaibault/maintenancewebsite.git
 cd maintenancewebsite
