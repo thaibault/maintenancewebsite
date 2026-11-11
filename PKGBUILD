@@ -10,11 +10,11 @@
 # 3.0 unported license. See https://creativecommons.org/licenses/by/3.0/deed.de
 # endregion
 pkgname=maintenance-website
-pkgver=1.0.3
-pkgrel=4
+pkgver=1.0.5
+pkgrel=1
 pkgdesc='Maintenance website for documentation-, home- and websites.'
 arch=(any)
-url=https://github.com/thaibault/maintenanceWebsite
+url=https://github.com/thaibault/maintenancewebsite
 license=(CC-BY-3.0)
 depends=()
 source=(index.html)
@@ -23,7 +23,7 @@ copy_to_aur=true
 
 package() {
     set +x
-    install -D --mode 755 "${srcdir}/index.html" \
+    install -D --mode 644 "${srcdir}/index.html" \
         "${pkgdir}/usr/lib/maintenanceWebsite.html"
     set -x
 }

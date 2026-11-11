@@ -6,11 +6,11 @@
     "homepage",
     "website"
   ],
-  "homepage": "https://tsickert.com/maintainancewebsite",
+  "homepage": "https://tsickert.com/maintenancewebsite",
   "license": "CC-BY-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thaibault/maintainancewebsite.git"
+    "url": "https://github.com/thaibault/maintenancewebsite.git"
   },
   "type": "module",
   "main": "index.html",
