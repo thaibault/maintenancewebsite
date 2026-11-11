@@ -3,10 +3,10 @@
     <!--region head-->
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="dummy">
+        <meta name="description" content="maintenance">
         <meta name="author" content="Torben Sickert">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>dummy</title>
+        <title>Website under maintenance</title>
         <script>
             window.document.documentElement.className =
                 window.document.documentElement.className.replace(
@@ -15,7 +15,6 @@
         <style>
             body {
                 margin: 0;
-                padding: 20px;
             }
             body a {
                 color: #ff8888;
@@ -25,7 +24,24 @@
                 color: #ffffff;
                 padding: 40px;
             }
+            body header nav a {
+                margin-right: 10px;
+            }
+            lang-replacement, lang-alternative:not([active]), .wi-hide {
+                display: none;
+            }
         </style>
+        <!--
+            Switches between the language variants given as comments. Without
+            this script (e.g. offline) the American English version is shown.
+        -->
+        <script type="module">
+            import {
+                api
+            } from 'https://unpkg.com/web-internationalization@2/dist/bundle/index.js'
+
+            api.register()
+        </script>
     </head>
     <!--endregion-->
     <!--region body-->
@@ -35,85 +51,201 @@
                 window.document.body.className.replace(
                     /(^|\s)no-javascript(\s|$)/, '$1javascript$2');
         </script>
-        <!--region header-->
-        <header><h1>Wartungsarbeiten</h1></header>
-        <!--endregion-->
-        <!--region sections-->
-        <section>
-            <p>
-                Wir führen grade Wartungsarbeiten an unserem Angebot durch und
-                sind bald wieder für Sie da.
-            </p>
-            <p>
-                Torben Sickert
-                <br>
-                Waldstraße 29
-                <br>
-                79194 Gundelfingen i.Br.
-                <br>
-                Phone:
-                <a href="tel:004917610248185">
-                    +49 (0) 176<span>/</span>10 248 185
+        <web-internationalization>
+            <!--region header-->
+            <header>
+                <nav>
+                    <a href="#lang-enUS">en</a>
+                    <a href="#lang-deDE">de</a>
+                    <a href="#lang-frFR">fr</a>
+                </nav>
+                <h1>
+                    Maintenance
+                    <!--deDE:Wartungsarbeiten-->
+                    <!--frFR:Maintenance en cours-->
+                </h1>
+            </header>
+            <!--endregion-->
+            <!--region sections-->
+            <section>
+                <p>
+                    We are currently performing maintenance work on our
+                    services and will be back for you soon.
+                    <!--deDE:
+                        Wir führen gerade Wartungsarbeiten an unserem Angebot
+                        durch und sind bald wieder für Sie da.
+                    -->
+                    <!--frFR:
+                        Nous effectuons actuellement des travaux de maintenance
+                        sur nos services et serons bientôt de retour pour vous.
+                    -->
+                </p>
+                <p>
+                    Torben Sickert
+                    <br>
+                    Waldstraße 29
+                    <br>
+                    79194 Gundelfingen i.Br.
+                    <br>
+                    Phone:
+                    <!--deDE:Telefon:-->
+                    <!--frFR:Téléphone:-->
+                    <a href="tel:004917610248185">
+                        +49 (0) 176<span>/</span>10 248 185
+                    </a>
+                    <br>
+                    Email:
+                    <!--deDE:E-Mail:-->
+                    <!--frFR:E-mail:-->
+                    <a href="mailto:info@tsickert.com">info@tsickert.com</a>
+                    <br>
+                    Website:
+                    <!--deDE:Webseite:-->
+                    <!--frFR:Site web:-->
+                    <a href="https://tsickert.com">https://tsickert.com</a>
+                </p>
+                <h2>
+                    Disclaimer
+                    <!--deDE:Haftungsausschluss-->
+                    <!--frFR:Clause de non-responsabilité-->
+                </h2>
+                <h3>
+                    I. Liability
+                    <!--deDE:I. Haftung-->
+                    <!--frFR:I. Responsabilité-->
+                </h3>
+                <p>
+                    The author assumes no liability for the availability and
+                    trouble-free operation of the online offering. Likewise,
+                    the author assumes no liability for the timeliness,
+                    correctness, completeness or quality of the information
+                    provided. The author is not liable for indirect, special,
+                    incidental or consequential damages arising from the use
+                    of this website or from any delay in or impossibility of
+                    using the information and services made available on the
+                    website, regardless of the legal basis of such liability.
+                    <!--deDE:
+                        Der Autor übernimmt keine Gewähr für die Verfügbarkeit
+                        und Störungsfreiheit des Online-Angebotes. Er übernimmt
+                        ebenfalls keine Gewähr für die Aktualität, Korrektheit,
+                        Vollständigkeit oder Qualität der bereitgestellten
+                        Informationen. Der Autor haftet nicht für indirekte,
+                        besondere, Neben- oder Folgeschäden, die sich aus
+                        Nutzung dieser Webseite oder bei Verzögerung oder
+                        Unmöglichkeit einer solchen Nutzung der Informationen
+                        und Services, die auf der Webseite zugänglich gemacht
+                        werden ergeben, unabhängig von dem Rechtsgrund einer
+                        solchen Haftung.
+                    -->
+                    <!--frFR:
+                        L'auteur ne garantit ni la disponibilité ni le bon
+                        fonctionnement de l'offre en ligne. Il ne garantit pas
+                        non plus l'actualité, l'exactitude, l'exhaustivité ou
+                        la qualité des informations fournies. L'auteur n'est
+                        pas responsable des dommages indirects, particuliers,
+                        accessoires ou consécutifs résultant de l'utilisation
+                        de ce site ou d'un retard ou d'une impossibilité
+                        d'utiliser les informations et services mis à
+                        disposition sur le site, quel que soit le fondement
+                        juridique d'une telle responsabilité.
+                    -->
+                </p>
+                <h3>
+                    II. References and links
+                    <!--deDE:II. Verweise und Links-->
+                    <!--frFR:II. Références et liens-->
+                </h3>
+                <p>
+                    The author expressly distances himself from all contents
+                    of linked pages and expressly declares that no illegal
+                    content was recognizable on the linked pages at the time
+                    the links were set. Solely the provider of the referenced
+                    page is liable for illegal, incorrect or incomplete
+                    content and in particular for damages arising from the use
+                    or non-use of information presented in this way.
+                    <!--deDE:
+                        Der Autor distanziert sich ausdrücklich von allen
+                        Inhalten der verknüpften Seiten und erklärt
+                        ausdrücklich, dass zum Zeitpunkt der Linksetzung keine
+                        illegalen Inhalte auf den verlinkten Seiten erkennbar
+                        waren. Für illegale, fehlerhafte oder unvollständige
+                        Inhalte und insbesondere für Schäden, die aus der
+                        Nutzung oder Nichtnutzung solcherart dargebotener
+                        Informationen entstehen, haftet allein der Anbieter der
+                        Seite, auf welche verwiesen wurde.
+                    -->
+                    <!--frFR:
+                        L'auteur se distancie expressément de tous les contenus
+                        des pages liées et déclare expressément qu'aucun
+                        contenu illégal n'était identifiable sur les pages
+                        liées au moment de la création des liens. Seul le
+                        fournisseur de la page référencée est responsable des
+                        contenus illégaux, erronés ou incomplets et en
+                        particulier des dommages résultant de l'utilisation ou
+                        de la non-utilisation des informations ainsi
+                        présentées.
+                    -->
+                </p>
+                <h3>
+                    III. Copyright
+                    <!--deDE:III. Urheberrecht-->
+                    <!--frFR:III. Droit d'auteur-->
+                </h3>
+                <p>
+                    All texts, images and information are subject to
+                    copyright and other laws protecting intellectual property.
+                    The copyright for published objects created by the author
+                    remains solely with the author of these pages. Any
+                    reproduction or other use of such texts, images or other
+                    objects in other electronic or printed publications
+                    requires the express consent of the author.
+                    <!--deDE:
+                        Alle Texte, Bilder, Informationen unterliegen dem
+                        Urheberrecht und anderen Gesetzen zum Schutz des
+                        geistigen Eigentums. Das Copyright für veröffentlichte,
+                        vom Autor selbst erstellte Objekte bleibt allein beim
+                        Autor der Seiten. Die Vervielfältigung oder
+                        anderweitige Verwendung dieser Text-, Bild- oder
+                        sonstiger Objekte in anderen elektronischen oder
+                        gedruckten Publikationen bedarf der ausdrücklichen
+                        Zustimmung des Autors.
+                    -->
+                    <!--frFR:
+                        Tous les textes, images et informations sont soumis au
+                        droit d'auteur et aux autres lois protégeant la
+                        propriété intellectuelle. Le droit d'auteur sur les
+                        objets publiés créés par l'auteur appartient
+                        exclusivement à l'auteur de ces pages. Toute
+                        reproduction ou autre utilisation de ces textes, images
+                        ou autres objets dans d'autres publications
+                        électroniques ou imprimées nécessite l'accord exprès de
+                        l'auteur.
+                    -->
+                </p>
+                <p>
+                    Responsible for the content is Torben Sickert; see contact
+                    details above.
+                    <!--deDE:
+                        Inhaltlich verantwortlich ist Torben Sickert;
+                        Kontaktdaten siehe oben.
+                    -->
+                    <!--frFR:
+                        Le responsable du contenu est Torben Sickert; voir les
+                        coordonnées ci-dessus.
+                    -->
+                </p>
+            </section>
+            <!--endregion-->
+            <!--region footer-->
+            <footer>
+                <a href="#top">
+                    Back to top
+                    <!--deDE:Nach oben-->
+                    <!--frFR:Retour en haut-->
                 </a>
-                <br>
-                E-Mail:
-                <a href="mailto:info@tsickert.com">info@tsickert.com</a>
-                <br>
-                Website:
-                <a href="https://tsickert.com">https://tsickert.com</a>
-                <br>
-                <br>
-                Haftungsausschluss
-                <br>
-                I. Haftung
-                <br>
-                <br>
-                Der Autor übernimmt keine Gewähr für die Verfügbarkeit und
-                Störungsfreiheit des Online-Angebotes. Er übernimmt ebenfalls
-                keine Gewähr für die Aktualität, Korrektheit, Vollständigkeit
-                oder Qualität der bereitgestellten Informationen. Der Autor
-                haftet nicht für indirekte, besondere, Neben- oder
-                Folgeschäden, die sich aus Nutzung dieser Webseite oder bei
-                Verzögerung oder Unmöglichkeit einer solchen Nutzung der
-                Informationen und Services, die auf der Webseite zugänglich
-                gemacht werden ergeben, unabhängig von dem Rechtsgrund einer
-                solchen Haftung.
-                <br>
-                <br>
-                II. Verweise und Links
-                <br>
-                <br>
-                Der Autor distanziert sich ausdrücklich von allen Inhalten der
-                verknüpften Seiten und erklärt ausdrücklich, dass zum Zeitpunkt
-                der Linksetzung keine illegalen Inhalte auf den verlinkten
-                Seiten erkennbar waren. Für illegale, fehlerhafte oder
-                unvollständige Inhalte und insbesondere für Schäden, die aus
-                der Nutzung oder Nichtnutzung solcherart dargebotener
-                Informationen entstehen, haftet allein der Anbieter der Seite,
-                auf welche verwiesen wurde.
-                <br>
-                <br>
-                III. Urheberrecht
-                <br>
-                <br>
-                Alle Texte, Bilder, Informationen unterliegen dem Urheberrecht
-                und anderen Gesetzen zum Schutz des geistigen Eigentums. Das
-                Copyright für veröffentlichte, vom Autor selbst erstellte
-                Objekte bleibt allein beim Autor der Seiten. Die
-                Vervielfältigung oder anderweitige Verwendung dieser Text-,
-                Bild- oder sonstiger Objekte in anderen elektronischen oder
-                gedruckten Publikationen bedarf der ausdrücklichen Zustimmung
-                des Autors.
-                <br>
-                <br>
-                <br>
-                Inhaltlich verantwortlich ist Torben Sickert;
-                Kontaktdaten siehe oben.
-            </p>
-        </section>
-        <!--endregion-->
-        <!--region footer-->
-        <footer><a href="#top">Nach oben</a></footer>
+            </footer>
+            <!--endregion-->
+        </web-internationalization>
         <!--endregion-->
     </body>
     <!--endregion-->
