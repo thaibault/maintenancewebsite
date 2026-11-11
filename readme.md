@@ -26,38 +26,52 @@ Use case
 Maintenance-Website is a single self-contained HTML page you serve instead of
 your real website while it is down for maintenance. It tells visitors that
 the site will be back soon and still shows contact details and a legal
-disclaimer. It has no dependencies: styles and scripts are inlined, so it
-works even when every other service behind your website is offline.
+disclaimer. Styles are inlined, so it works even when every other service
+behind your website is offline.
 <!--deDE:
     Maintenance-Website ist eine einzelne, eigenständige HTML-Seite, die Sie
     anstelle Ihrer eigentlichen Webseite ausliefern, solange diese wegen
     Wartungsarbeiten nicht erreichbar ist. Sie teilt Besuchern mit, dass die
     Seite bald wieder verfügbar ist, und zeigt weiterhin Kontaktdaten und
-    einen Haftungsausschluss. Sie hat keine Abhängigkeiten: Stile und Skripte
-    sind eingebettet, sodass sie auch funktioniert, wenn alle anderen Dienste
-    hinter Ihrer Webseite offline sind.
+    einen Haftungsausschluss. Die Stile sind eingebettet, sodass sie auch
+    funktioniert, wenn alle anderen Dienste hinter Ihrer Webseite offline
+    sind.
 -->
 <!--frFR:
     Maintenance-Website est une page HTML unique et autonome que vous servez
     à la place de votre véritable site pendant une maintenance. Elle informe
     les visiteurs que le site sera bientôt de retour et affiche toujours les
-    coordonnées et un avertissement juridique. Elle n'a aucune dépendance:
-    les styles et les scripts sont intégrés, elle fonctionne donc même
-    lorsque tous les autres services derrière votre site sont hors ligne.
+    coordonnées et un avertissement juridique. Les styles sont intégrés,
+    elle fonctionne donc même lorsque tous les autres services derrière votre
+    site sont hors ligne.
 -->
 
 See it live at
 [tsickert.com/maintenancewebsite](https://tsickert.com/maintenancewebsite).
-The page content is currently written in German only.
+The page is available in American English, German and French. It picks the
+visitor's browser language and offers links to switch manually. The switch is
+done by
+[web-internationalization](https://tsickert.com/web-internationalization)
+loaded from a CDN. If it can not be loaded, the English version is shown.
 <!--deDE:
     Live ansehen unter
     [tsickert.com/maintenancewebsite](https://tsickert.com/maintenancewebsite).
-    Der Seiteninhalt ist derzeit nur auf Deutsch verfasst.
+    Die Seite ist auf amerikanischem Englisch, Deutsch und Französisch
+    verfügbar. Sie wählt die Browsersprache des Besuchers und bietet Links
+    zum manuellen Umschalten. Das Umschalten übernimmt
+    [web-internationalization](https://tsickert.com/web-internationalization),
+    geladen von einem CDN. Kann es nicht geladen werden, wird die englische
+    Version angezeigt.
 -->
 <!--frFR:
     Voir en ligne sur
     [tsickert.com/maintenancewebsite](https://tsickert.com/maintenancewebsite).
-    Le contenu de la page est actuellement rédigé uniquement en allemand.
+    La page est disponible en anglais américain, en allemand et en français.
+    Elle choisit la langue du navigateur du visiteur et propose des liens
+    pour changer manuellement. Le changement est assuré par
+    [web-internationalization](https://tsickert.com/web-internationalization),
+    chargé depuis un CDN. S'il ne peut pas être chargé, la version anglaise
+    est affichée.
 -->
 
 <div class="wd-table-of-contents">
@@ -150,13 +164,19 @@ Customization
 
 The page is plain HTML without a build step. Copy "index.html" and adjust the
 contact details, texts and the inline styles in its "head" to your needs.
+Translations are written as HTML comments after each text, see
+[web-internationalization](https://tsickert.com/web-internationalization).
 <!--deDE:
     Die Seite ist einfaches HTML ohne Build-Schritt. Kopieren Sie
     "index.html" und passen Sie Kontaktdaten, Texte und die eingebetteten
-    Stile im "head" nach Bedarf an.
+    Stile im "head" nach Bedarf an. Übersetzungen stehen als HTML-Kommentare
+    hinter jedem Text, siehe
+    [web-internationalization](https://tsickert.com/web-internationalization).
 -->
 <!--frFR:
     La page est du HTML simple sans étape de build. Copiez "index.html" et
     adaptez les coordonnées, les textes et les styles intégrés dans son
-    "head" selon vos besoins.
+    "head" selon vos besoins. Les traductions sont écrites sous forme de
+    commentaires HTML après chaque texte, voir
+    [web-internationalization](https://tsickert.com/web-internationalization).
 -->
