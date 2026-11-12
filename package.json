@@ -7,7 +7,7 @@
     "website"
   ],
   "homepage": "https://tsickert.com/maintenancewebsite",
-  "license": "CC-BY-3.0",
+  "license": "CC-BY-4.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/thaibault/maintenancewebsite.git"
