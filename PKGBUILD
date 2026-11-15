@@ -19,7 +19,7 @@ url=https://github.com/thaibault/maintenancewebsite
 license=(CC-BY-4.0)
 depends=()
 source=(index.html)
-md5sums=(SKIP)
+sha256sums=(SKIP)
 copy_to_aur=true
 
 package() {
